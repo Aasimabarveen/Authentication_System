@@ -66,7 +66,7 @@ clear_data=()=>{
 }
 register_user=()=>{
     console.log("came to register");
-    const url = 'http://192.168.56.1/authenticate/api/register.php';
+    const url = 'http://localhost/authenticate/api/register.php';
     const data = {
         fname: fname.value,
         lname: lname.value,
