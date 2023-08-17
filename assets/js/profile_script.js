@@ -111,7 +111,7 @@ clear_data=()=>{
 }
 
 update_userDetails=()=>{
-    const url = 'http://192.168.56.1/authenticate/api/update.php';
+    const url = 'http://localhost/authenticate/api/update.php';
     const data = {
         fname: efname.value,
         lname: elname.value,
