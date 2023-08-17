@@ -20,3 +20,5 @@ This is a basic authentication system that allows users to register, log in, vie
 - JWT: JSON Web Tokens for user authentication and session management.
 - SessionStorage: Used to store JWTs on the client side for maintaining user sessions.
 
+
+[NOTE: Need to place the API files and back-end server script files to a server and provide the corresponding location in the Ajax async call URL to ensure the communication between front end and APIs.]
