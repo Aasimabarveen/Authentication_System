@@ -41,7 +41,7 @@ set_error=(msg,color)=>{
 }
 
 login_user=()=>{
-    const url = 'http://192.168.56.1/authenticate/api/login.php';
+    const url = 'http://localhost/authenticate/api/login.php';
     const data = {
         passwrd:passwrd.value,
         username:username.value
