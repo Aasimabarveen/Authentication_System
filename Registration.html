@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="container mt-5 mb-5">
+		<h2>Register</h2>
+		<form action="" method="post" class="form">
+			<p class="error"></p>
+			<label for="fname">First Name:</label>
+			<input type="text" class="form-control" id="fname" required placeholder="Enter Your First Name" pattern="[A-Za-z\s]+"> <br/>
+			<label for="lname">Last Name:</label>
+			<input type="text" class="form-control" id="lname" required placeholder="Enter Your Last Name" pattern="[A-Za-z\s]+">  <br/>
+			<label for="dob">DoB:</label>
+			<input type="date" class="form-control" id="dob" required placeholder="Enter Your DoB">  <br/>
+			<label for="contact">Contact:</label>
+			<input type="number" class="form-control" id="contact" required placeholder="Enter Your Phone Number" pattern="^(?!(\d)\1{9})\d{10}$" title="Enter Valid Contact Number"> <br/>
+			<label for="username">Username:</label>
+			<input type="username" class="form-control" id="username" required placeholder="Enter a username" > <br/>
+			<label for="passwrd">Password:</label>
+			<input type="Password" class="form-control" id="passwrd" required placeholder="Enter a Password" > <br/>
+			<label for="cpasswrd">Confirm Password:</label>
+			<input type="Password" class="form-control" id="cpasswrd" required placeholder="Confirm Password" >  <br/>
+			<div class="center-button">
+				<button class="btn btn-primary" id="register">Sign Up</button>
+			</div>
+			<div class="login_link">
+				Already have an account <a href="login.html">Login</a>
+			</div>
+		</form>
+	</div>
+	<script src="assets/script/script.js"></script>
+</body>
+</html>

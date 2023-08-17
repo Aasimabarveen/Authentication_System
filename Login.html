@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="container mt-5 mb-5">
+		<h2>Login</h2>
+		<form action="" method="post" class="form">
+			<p class="error"></p>
+			<label for="uname">UserName:</label>
+			<input type="text" class="form-control" id="uname" required placeholder="Enter UserName" pattern="[A-Za-z\s]+"> <br>
+			<label for="passwrd">Password:</label>
+			<input type="Password" class="form-control" id="passwrd" required placeholder="Enter Password" > <br/>
+			<div class="center-button">
+				<button class="btn btn-primary" id="Login">Login</button>
+			</div>
+			<div class="login_link">
+				Create an account <a href="Registration.html">Register</a>
+			</div>
+		</form>
+	</div>
+	<script src="assets/script/Login_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Profile</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="Profile_container"> 
+			<div class="progress progress_hide" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+			>
+			<div class="progress-bar progress-bar-striped progress-bar-animated">Updating Profile...</div>
+			</div>
+			<div class='row'><div class="col"><a href="" class="editprofile">Edit</a><a href="" class="back hide">Back</a></div><div class="col"><a href="" class="Logout" >Logout</a></div></div>
+			<div class="userDetails">
+			<div class="header">
+				<h2>Profile</h2>
+			</div>
+			<div class="row mt-5">
+				<p class="perror"></p>
+				<div class="col">
+					<label class="label">First name </label>
+					<p id="Fname"> </p>
+				</div>
+				<div class="col">
+					<label class="label">Last name </label>
+					<p id="Lname"></p>
+				</div>
+				<div class="col">
+					<label class="label">Dob </label>
+					<p id="Dob"></p>
+				</div>
+				<div class="col">
+					<label class="label">Contact </label>
+					<p id="Contact"></p>
+				</div>
+			</div>
+		</div>
+		<div class="EditForm">
+			<h2>Edit Profile</h2>
+			<form action="" method="post" class="form">
+			<p class="error"></p>
+			<label for="fname" >First Name:</label>
+			<input type="text" class="form-control" id="fname" required placeholder="Enter Your First Name" pattern="[A-Za-z\s]+"> <br/>
+			<label for="lname">Last Name:</label>
+			<input type="text" class="form-control" id="lname" required placeholder="Enter Your Last Name" pattern="[A-Za-z\s]+">  <br/>
+			<label for="dob">DoB:</label>
+			<input type="date" class="form-control" id="dob" required placeholder="Enter Your DoB">  <br/>
+			<label for="contact">Contact:</label>
+			<input type="number" class="form-control" id="contact" required placeholder="Enter Your Phone Number" pattern="^(?!(\d)\1{9})\d{10}$" title="Enter Valid Contact Number"> <br/>
+			<div class="center-button">
+				<button class="btn btn-primary" id="update">Update</button>
+			</div>
+			</form>
+		</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="footer.html">
+	<script src="assets/script/profile_script.js"></script>
+	<script src="assets/script/token_expiry.js"></script>
+</body>
+</html>
